@@ -1,1311 +1,293 @@
-# Awesome-Embedded-Dashboards
+# Awesome Embedded Dashboards & Analytics 📊
 
-# 📊 Top Embedded Analytics Platforms Ecosystem
+<p align="center">
+  <img src="assets/banner.svg" alt="Awesome Embedded Dashboards Banner" width="100%">
+</p>
 
+<p align="center">
+  <a href="https://github.com/ishandutta2007/Awesome-Awesome-Awesome"><img src="https://img.shields.io/badge/Awesome-%E2%9C%94-blueviolet?style=flat-square&logo=github" alt="Awesome"/></a><a href="https://discord.gg/jc4xtF58Ve"><img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord" /></a>
+  <a href="https://github.com/ishandutta2007/Awesome-Embedded-Dashboards"><img src="https://img.shields.io/github/stars/ishandutta2007/Awesome-Embedded-Dashboards?style=flat-square&color=gold" alt="GitHub Stars"/></a>
+  <a href="https://github.com/ishandutta2007/Awesome-Embedded-Dashboards/blob/main/LICENSE"><img src="https://img.shields.io/github/license/ishandutta2007/Awesome-Embedded-Dashboards?style=flat-square&color=blue" alt="License"/></a>
+  <a href="https://github.com/ishandutta2007"><img alt="GitHub followers" src="https://img.shields.io/github/followers/ishandutta2007?label=Follow" /></a>
+</p>
 
+# 📊 Top Embedded Analytics Platforms & Open-Source Dashboard Ecosystem
 
-**Curated List of SaaS Products & Open-Source GitHub Projects**
+> **Curated Directory of SaaS Products, Open-Source GitHub Projects, Semantic Layers & Developer SDKs for Embedded Analytics, Customer-Facing BI, White-Label Dashboards, and Multi-Tenant Data Apps.**
 
-*Focused on Embedded Dashboards, Embedded Analytics, Customer-Facing BI, White-Label Analytics, Multi-Tenant Analytics & Data Apps*
+*Last updated: September 2026* 🗓️
 
-**Last updated: September 2026**
+---
 
-
+## 📌 Overview
 
 This repository tracks notable **SaaS/Hosted platforms** and **open-source GitHub projects** for **embedded analytics and embedded dashboards**.
 
+Embedded analytics allows software companies to place **dashboards, reports, charts, self-service analytics and data exploration directly inside their own applications**, allowing customers to consume analytics without leaving the product. 🚀
 
+Typical capabilities include **white-labeling, multi-tenancy, row-level security (RLS), embedded dashboards, interactive charts, self-service exploration, dashboard builders, semantic layers, APIs/SDKs, SSO, customer-specific data access, analytics portals and developer-controlled customization**. 🔑
 
-Embedded analytics allows software companies to place **dashboards, reports, charts, self-service analytics and data exploration directly inside their own applications**, allowing customers to consume analytics without leaving the product.
+---
 
+## 💡 Architecture & Open-Source Stack Concept
 
-
-Typical capabilities include **white-labeling, multi-tenancy, row-level security, embedded dashboards, interactive charts, self-service exploration, dashboard builders, semantic layers, APIs/SDKs, SSO, customer-specific data access, analytics portals and developer-controlled customization**.
-
-
-
-**Examples** include Explo, Toucan Toco, GoodData, Sisense, Looker Embedded, Reveal BI, Bold BI, Logi Analytics, Metabase Enterprise and Holistics.
-
-
-
-**Open-source emphasis:** This repository places particular emphasis on **self-hosted and open-source alternatives**, including complete BI platforms that support embedding, embedded analytics SDKs, semantic layers, dashboard builders, visualization libraries and data infrastructure that can be assembled into a customer-facing analytics product.
-
-
-
-A useful distinction is that an open-source embedded analytics stack does **not necessarily need to be a single product**:
-
-
+An open-source embedded analytics stack does **not necessarily need to be a single monolithic product**:
 
 ```text
-
                     YOUR SaaS APPLICATION
-
-                            │
-
-             ┌──────────────┴──────────────┐
-
-             │                             │
-
-             ▼                             ▼
-
-        Application UI                Analytics UI
-
-             │                             │
-
-             └──────────────┬──────────────┘
-
-                            ▼
-
-                  Embedded Analytics Layer
-
-                            │
-
-              ┌─────────────┼─────────────┐
-
-              ▼             ▼             ▼
-
-          Dashboards    Semantic Layer   APIs/SDK
-
-              │             │             │
-
-              └─────────────┼─────────────┘
-
-                            ▼
-
-                       Data Warehouse
-
-                            │
-
-              PostgreSQL / ClickHouse / DuckDB
-
+                             │
+              ┌──────────────┴──────────────┐
+              │                             │
+              ▼                             ▼
+         Application UI                Analytics UI
+              │                             │
+              └──────────────┬──────────────┘
+                             ▼
+                   Embedded Analytics Layer
+                             │
+               ┌─────────────┼─────────────┐
+               ▼             ▼             ▼
+           Dashboards    Semantic Layer   APIs/SDK
+               │             │             │
+               └─────────────┼─────────────┘
+                             ▼
+                        Data Warehouse
+                             │
+               PostgreSQL / ClickHouse / DuckDB
 ```
 
-
-
-For example, **Apache Superset** provides an Embedded SDK for placing Superset dashboards inside another application, while **Metabase** provides modular embedding and React/web-component approaches. **Lightdash** provides an open-source BI platform with embedding capabilities, and **Cube Core** provides an open-source semantic layer specifically designed to power embedded analytics and other downstream applications.
-
-
-
-Contributions welcome! Add new embedded analytics platforms, self-hosted BI systems, embedding SDKs, semantic layers, visualization libraries and related open-source projects.
-
-
+For example, **Apache Superset** provides an Embedded SDK for placing Superset dashboards inside another application, while **Metabase** provides modular embedding and React/web-component approaches. **Lightdash** provides an open-source BI platform with embedding capabilities, and **Cube Core** provides an open-source semantic layer specifically designed to power embedded analytics. ⚡
 
 ---
 
+## 📖 Table of Contents
 
-
-## Table of Contents
-
-
-
-* [SaaS/Hosted Platforms](#saashosted-platforms)
-
-* [Open-Source GitHub Projects](#open-source-github-projects)
-
-
-
-  * [Complete Open-Source BI & Embedded Analytics Platforms](#complete-open-source-bi--embedded-analytics-platforms)
-
-  * [Open-Source Embedded Analytics Engines](#open-source-embedded-analytics-engines)
-
-  * [Semantic Layers](#semantic-layers)
-
-  * [Dashboard & Visualization Frameworks](#dashboard--visualization-frameworks)
-
-  * [Embedded Analytics SDKs & Components](#embedded-analytics-sdks--components)
-
-  * [Additional Strong Open-Source Options](#additional-strong-open-source-options)
-
-* [Commercial → Open-Source Capability Mapping](#commercial--open-source-capability-mapping)
-
-* [Framework for Building a Self-Hosted Embedded Analytics Platform](#framework-for-building-a-self-hosted-embedded-analytics-platform)
-
-* [How to Contribute](#how-to-contribute)
-
-* [Disclaimer](#disclaimer)
-
-
+- [☁️ SaaS/Hosted Platforms](#%EF%B8%8F-saashosted-platforms)
+- [🔓 Open-Source GitHub Projects](#-open-source-github-projects)
+  - [⚡ Complete Open-Source BI & Embedded Analytics Platforms](#-complete-open-source-bi--embedded-analytics-platforms)
+  - [🧠 Open-Source Semantic Layers](#-open-source-semantic-layers)
+  - [🎨 Dashboard & Visualization Frameworks](#-dashboard--visualization-frameworks)
+  - [📦 Embedded Analytics SDKs & Components](#-embedded-analytics-sdks--components)
+  - [🗄️ Analytical Databases & Storage Infrastructure](#%EF%B8%8F-analytical-databases--storage-infrastructure)
+  - [🔄 Data Engineering, Orchestration & Pipelines](#-data-engineering-orchestration--pipelines)
+  - [🔐 Security, Automation & Supporting Infrastructure](#-security-automation--supporting-infrastructure)
+- [🔄 Commercial → Open-Source Capability Mapping](#-commercial--open-source-capability-mapping)
+- [🏗️ Framework for Building a Self-Hosted Embedded Analytics Platform](#%EF%B8%8F-framework-for-building-a-self-hosted-embedded-analytics-platform)
+- [📈 Star History](#-star-history)
+- [❤️ Support & Community](#%EF%B8%8F-support--community)
+- [🤝 How to Contribute](#-how-to-contribute)
+- [⚠️ Disclaimer](#%EF%B8%8F-disclaimer)
 
 ---
 
-
-
-## SaaS/Hosted Platforms
-
-
-
-* **[Explo](https://www.explo.co/)**
-
-  Developer-focused embedded analytics platform for embedding dashboards and reports into SaaS applications, with APIs, SDKs, customization and customer-specific analytics.
-
-
-
-* **[Toucan Toco](https://www.toucantoco.com/)**
-
-  Embedded analytics platform focused on customer-facing analytics, white-labeling, guided data experiences, multi-tenancy and native-looking analytics experiences. Toucan describes its embedded product as supporting web components/SDKs, white-labeling, row-level security and token-based tenant isolation.
-
-
-
-* **[GoodData](https://www.gooddata.ai/)**
-
-  Embedded analytics platform providing dashboards, visualizations, self-service analytics, AI-assisted analytics, white-labeling and multi-tenant embedded analytics.
-
-
-
-* **[Sisense](https://www.sisense.com/)**
-
-  Embedded analytics platform for integrating governed analytics, dashboards, self-service exploration and AI-powered analytics into applications using APIs, SDKs and customizable components.
-
-
-
-* **[Looker](https://cloud.google.com/looker)**
-
-  Google Cloud's BI and analytics platform with embedded analytics capabilities, governed semantic modeling and APIs for integrating analytics into applications.
-
-
-
-* **[Reveal Embedded Analytics](https://www.revealbi.io/)**
-
-  Embedded BI platform designed for integrating interactive dashboards, reports and analytics into applications using SDKs and developer-oriented embedding capabilities.
-
-
-
-* **[Bold BI](https://www.boldbi.com/)**
-
-  Embedded analytics platform providing interactive dashboards, JavaScript SDKs, REST APIs, white-labeling, theming, filtering and multi-tenant embedding.
-
-
-
-* **[Logi Analytics](https://www.logianalytics.com/)**
-
-  Embedded analytics platform for integrating dashboards, reports, data visualizations and self-service analytics into software products.
-
-
-
-* **[Metabase](https://www.metabase.com/)**
-
-  Open-core BI platform with embedded analytics capabilities for dashboards, questions and interactive data exploration. Its current embedding system supports view-only, interactive and editable embedding, with advanced interactive embedding available on paid plans.
-
-
-
-* **[Holistics](https://www.holistics.io/)**
-
-  BI and embedded analytics platform supporting embedded dashboards and portals, white-labeling, self-service exploration, signed URLs, authentication and multi-tenant row-level permissions.
-
-
-
-* **[Luzmo](https://www.luzmo.com/)**
-
-  Embedded analytics platform designed for SaaS applications with customizable dashboards, self-service analytics and developer-friendly embedding.
-
-
-
-* **[Embeddable](https://embeddable.com/)**
-
-  Developer-focused embedded analytics platform for building customizable customer-facing dashboards and analytics experiences directly into applications.
-
-
-
-* **[Tableau Embedded](https://www.tableau.com/developer/tools/embedding)**
-
-  Tableau's embedding capabilities for integrating Tableau visualizations and analytics into applications and portals.
-
-
-
-* **[Power BI Embedded](https://azure.microsoft.com/products/power-bi-embedded/)**
-
-  Microsoft Azure service for embedding Power BI reports, dashboards and analytics into applications.
-
-
-
-* **[Sigma Computing](https://www.sigmacomputing.com/)**
-
-  Cloud analytics platform with embedded analytics capabilities for integrating interactive data experiences into applications.
-
-
-
-* **[Domo Embedded](https://www.domo.com/product/embedded-analytics)**
-
-  Embedded analytics offering for integrating Domo-powered analytics and data experiences into customer-facing applications.
-
-
-
-* **[Qlik Embedded Analytics](https://www.qlik.com/us/products/embedded-analytics)**
-
-  Embedded analytics capabilities from Qlik for integrating interactive analytics, visualizations and governed data experiences into applications.
-
-
-
-* **[ThoughtSpot Embedded](https://www.thoughtspot.com/product/embedded-analytics)**
-
-  Embedded analytics platform focused on search-driven, AI-assisted and self-service analytics inside SaaS products.
-
-
-
-* **[Yellowfin](https://www.yellowfinbi.com/)**
-
-  BI and analytics platform supporting embedded analytics, dashboards, data storytelling and self-service analytics.
-
-
-
-* **[Preset](https://preset.io/)**
-
-  Hosted Apache Superset platform providing managed BI and analytics capabilities based on the open-source Superset ecosystem.
-
-
-
-* **[Holistics](https://www.holistics.io/)**
-
-  Embedded BI and analytics platform with dashboard embedding and full embedded portals, including multi-tenant row-level permissions and white-labeling.
-
-
+## ☁️ SaaS/Hosted Platforms
+
+### 🌐 Market Size & Industry Dynamics
+> **Estimated Sector Market Size:** The global Embedded Analytics market size is estimated at **\$68.5 Billion in 2026** (growing at ~15.4% CAGR from \$34 Billion in 2021).  
+> **Market Fragmentation:** The sector is **moderately fragmented**, featuring legacy BI giants (Microsoft Power BI, Salesforce Tableau, Google Looker) alongside fast-growing developer-first startups (Explo, Luzmo, Cube, Embeddable). It is **not a winner-take-all market** due to differing developer customization requirements, data security constraints, and self-hosted vs multi-tenant cloud needs.
+
+### 📊 SaaS Products Matrix (Sorted by Scale / Valuation / Revenue Descending)
+
+| Product | Enterprise Scale / Valuation / Revenue | Specific Starting Pricing | Free Tier / Trial Limit | Description & Key Capabilities |
+| :--- | :--- | :--- | :--- | :--- |
+| **[Power BI Embedded](https://azure.microsoft.com/products/power-bi-embedded/)** | **\$3.1 Trillion** *(Microsoft Parent Cap)* | \$1.008/hour (~\$735/month for A1 node) | \$200 Azure free credit (30 days limit) | Azure service for embedding Power BI reports, dashboards, and interactive analytics directly into SaaS applications. |
+| **[Looker](https://cloud.google.com/looker)** | **\$2.1 Trillion** *(Alphabet Parent Cap)* | \$5,000/month (Standard Platform tier) | 30-day Google Cloud free trial (\$300 credits) | Google Cloud's governed BI & embedded platform featuring LookML semantic modeling and developer embedding APIs. |
+| **[Tableau Embedded](https://www.tableau.com/developer/tools/embedding)** | **\$250 Billion** *(Salesforce Parent Cap)* | \$15/user/month (Embedded Viewer tier) | 14-day full feature free trial | Salesforce Tableau embedding toolkit for integrating rich visual analytics, dashboards, and self-service portals. |
+| **[Qlik Embedded Analytics](https://www.qlik.com/us/products/embedded-analytics)** | **\$10 Billion** *(Thoma Bravo / Enterprise)* | \$840/month (Standard SaaS tier) | 30-day free trial | Governed associative engine & analytics platform for embedding interactive visualizations and multi-tenant portals. |
+| **[Sisense](https://www.sisense.com/)** | **\$1.1 Billion** *(Valuation)* | \$10,000/year (~\$833/month entry) | 30-day free trial (Full API & Fusion access) | Enterprise API-first embedded analytics platform featuring AI-assisted exploration and customized SDK components. |
+| **[ThoughtSpot Embedded](https://www.thoughtspot.com/product/embedded-analytics)** | **\$4.5 Billion** *(Valuation)* | \$1,250/month (Developer tier) | 30-day free trial (Includes 2,500 query credits) | Search-driven and Natural Language AI embedded analytics platform for customer-facing SaaS applications. |
+| **[Domo Embedded](https://www.domo.com/product/embedded-analytics)** | **\$300 Million** *(Market Cap)* | \$300/month (Freemium pay-as-you-go) | Free Tier forever (5 users limit, 300 data credits/mo) | Cloud-native data platform providing embedded analytics, interactive dashboards, and white-label data apps. |
+| **[Sigma Computing](https://www.sigmacomputing.com/)** | **\$1.5 Billion** *(Valuation)* | \$500/month (Pro Starting tier) | 14-day free trial | Cloud-native spreadsheet-interface analytics with embedded iframe/SDK capabilities for customer portals. |
+| **[GoodData](https://www.gooddata.ai/)** | **\$100 Million+** *(PE Backed)* | \$1,000/month (Growth Tier) | 30-day free trial (GoodData Cloud Professional) | Governed multi-tenant embedded analytics engine with headless semantic layer and white-label dashboards. |
+| **[Logi Analytics](https://www.logianalytics.com/)** | **\$500 Million** *(Acquired by insightsoftware)* | \$1,200/month | 14-day developer free trial | Developer-focused embedded BI software for embedding reports, dashboards, and self-service authoring inside apps. |
+| **[Yellowfin](https://www.yellowfinbi.com/)** | **\$100 Million+** *(Acquired by Idera)* | \$10,000/year (~\$833/month) | 30-day free trial | Actionable embedded BI & data storytelling platform with white-labeling, automated signals, and governance. |
+| **[Preset](https://preset.io/)** | **\$100 Million** *(Valuation)* | \$20/user/month (Professional tier) | Free Tier forever (Up to 5 team members limit) | Fully managed cloud platform for Apache Superset with embedded dashboard SDK, guest token auth, and row-level security. |
+| **[Metabase](https://www.metabase.com/)** | **\$100 Million** *(Valuation)* | \$85/month (Pro tier with interactive embedding) | 14-day free trial (Metabase Cloud Pro) | Open-core BI platform featuring view-only embedding, interactive embedding SDKs, and multi-tenant row-level permissions. |
+| **[Explo](https://www.explo.co/)** | **\$50 Million** *(Valuation)* | \$650/month (Growth tier) | 14-day free trial | Developer-first embedded analytics platform for building customer-facing dashboards, customer portals, and report builders. |
+| **[Toucan Toco](https://www.toucantoco.com/)** | **\$30 Million** *(Funding)* | \$990/month | 14-day free trial | White-label customer-facing analytics platform focused on guided data storytelling, web components, and multi-tenancy. |
+| **[Holistics](https://www.holistics.io/)** | **\$20 Million** *(Bootstrapped/Scale)* | \$400/month (Standard tier) | 14-day free trial (Full feature access) | Business intelligence and embedded dashboard portal platform with code-based semantic layer (AMQL) and signed URLs. |
+| **[Bold BI](https://www.boldbi.com/)** | **\$20 Million** *(Syncfusion Division)* | \$495/month (Embedded Growth tier) | 15-day free trial | Embedded dashboard software by Syncfusion supporting JavaScript SDKs, multi-tenant isolation, and white-labeling. |
+| **[Luzmo](https://www.luzmo.com/)** | **\$15 Million** *(Funding)* | \$995/month (Growth tier) | 10-day free trial (Includes full SDK access) | Embedded analytics platform tailored for SaaS products with flexible API/SDK integration and low-code dashboard builder. |
+| **[Embeddable](https://embeddable.com/)** | **\$10 Million** *(Early Stage)* | \$750/month (Starter tier) | 14-day developer free trial | Headless developer platform combining semantic layer, custom React components, and low-latency database connectivity. |
+| **[Reveal Embedded Analytics](https://www.revealbi.io/)** | **\$10 Million** *(Infragistics Division)* | \$9,950/year flat rate (~\$829/month) | 30-day free trial | Native embedded SDK for Web, iOS, Android, Desktop to embed interactive dashboards with client-side renderers. |
 
 ---
 
-
-
-## Open-Source GitHub Projects
-
-
-
-> **Open-source emphasis:** The projects below are intentionally broader than direct SaaS replacements. The first group contains complete BI/analytics platforms that can be self-hosted and embedded. The later groups contain semantic layers, SDKs, dashboard frameworks, visualization engines and infrastructure that can be combined into a full Explo/Toucan/GoodData-style embedded analytics stack.
-
-
-
-### Complete Open-Source BI & Embedded Analytics Platforms
-
-
-
-* **[Apache Superset](https://github.com/apache/superset)**
-
-  Open-source modern BI and data-exploration platform supporting dashboards, charts, SQL exploration, APIs and an official Embedded SDK. The Embedded SDK allows Superset dashboards to be inserted into applications using the host application's authentication.
-
-
-
-* **[Metabase](https://github.com/metabase/metabase)**
-
-  Open-source BI platform with dashboards, query building and embedding capabilities. Metabase supports modular embedding of dashboards, questions and the query builder, including React and web-component approaches.
-
-
-
-* **[Lightdash](https://github.com/lightdash/lightdash)**
-
-  Open-source BI platform built around governed metrics and dbt, with dashboards, data apps, SDK-based embedding, permissions and self-hosting. Lightdash explicitly supports embedding dashboards, AI agents and Data Apps into products.
-
-
-
-* **[Redash](https://github.com/getredash/redash)**
-
-  Open-source data visualization and dashboarding platform designed around querying databases and building interactive visualizations and dashboards.
-
-
-
-* **[Rill Developer](https://github.com/rilldata/rill)**
-
-  Open-source developer-oriented BI platform for building dashboards and analytics applications from data models and metrics.
-
-
-
-* **[Evidence](https://github.com/evidence-dev/evidence)**
-
-  Open-source code-based BI platform where dashboards and reports can be built from SQL and version-controlled like software.
-
-
-
-* **[Streamlit](https://github.com/streamlit/streamlit)**
-
-  Open-source Python framework for turning data scripts into interactive data applications and dashboards, useful for building custom analytics portals.
-
-
-
-* **[Dash](https://github.com/plotly/dash)**
-
-  Open-source Python framework for building interactive analytical web applications and dashboards.
-
-
-
-* **[Shiny](https://github.com/rstudio/shiny)**
-
-  Open-source framework for building interactive data applications, dashboards and analytical interfaces using R or Python.
-
-
-
-* **[Grafana](https://github.com/grafana/grafana)**
-
-  Open-source dashboard and visualization platform with extensive data-source support, plugins and APIs; useful as a foundation for embedded operational analytics.
-
-
-
-* **[Apache Superset Embedded SDK](https://github.com/apache/superset/tree/master/superset-embedded-sdk)**
-
-  Dedicated open-source SDK for embedding Superset dashboards into applications with guest-token authentication and configurable dashboard UI.
-
-
-
-### Open-Source Embedded Analytics Engines
-
-
-
-* **[Apache Superset](https://github.com/apache/superset)**
-
-  Full open-source BI platform with an official embedding SDK and API ecosystem.
-
-
-
-* **[Metabase](https://github.com/metabase/metabase)**
-
-  Open-source BI platform that can be embedded into applications through modular and full-app embedding approaches.
-
-
-
-* **[Lightdash](https://github.com/lightdash/lightdash)**
-
-  Open-source BI and data-app platform with SDK-based embedding, user attributes and row-level security capabilities.
-
-
-
-* **[Rill](https://github.com/rilldata/rill)**
-
-  Open-source analytics application platform optimized for fast dashboard creation over analytical datasets.
-
-
-
-* **[Redash](https://github.com/getredash/redash)**
-
-  Open-source query and visualization platform suitable for building customer-facing dashboards around SQL data.
-
-
-
-* **[Grafana](https://github.com/grafana/grafana)**
-
-  Open-source analytics and observability platform that can serve as the visualization layer for an embedded analytics architecture.
-
-
-
-### Semantic Layers
-
-
-
-* **[Cube](https://github.com/cube-js/cube)**
-
-  Open-source semantic layer for embedded analytics, BI and AI applications. Cube Core lets developers define metrics, dimensions, joins and access rules once and expose them through SQL, REST and GraphQL APIs. It is explicitly designed to power custom embedded analytics experiences.
-
-
-
-* **[Lightdash](https://github.com/lightdash/lightdash)**
-
-  Open-source BI platform with a governed context/semantic layer for defining metrics, dimensions, joins, permissions and business logic.
-
-
-
-* **[MetricFlow](https://github.com/dbt-labs/metricflow)**
-
-  Open-source semantic-layer technology for defining metrics and querying them consistently across analytics applications.
-
-
-
-* **[Transform](https://github.com/transform-data/transform)**
-
-  Open-source semantic layer project for defining metrics and dimensions and serving them to downstream analytics applications.
-
-
-
-* **[Malloy](https://github.com/malloydata/malloy)**
-
-  Open-source analytical language and modeling system designed for reusable data definitions and analytical queries.
-
-
-
-* **[Metric Store / Semantic Layer projects](https://github.com/topics/semantic-layer)**
-
-  GitHub ecosystem of open-source semantic-layer implementations useful for creating governed embedded analytics architectures.
-
-
-
-### Dashboard & Visualization Frameworks
-
-
-
-* **[Grafana](https://github.com/grafana/grafana)**
-
-  Open-source dashboarding platform supporting multiple data sources, panels, plugins, APIs and extensive visualization capabilities.
-
-
-
-* **[Apache ECharts](https://github.com/apache/echarts)**
-
-  Open-source JavaScript visualization library for building highly customized interactive charts and dashboards.
-
-
-
-* **[Plotly.js](https://github.com/plotly/plotly.js)**
-
-  Open-source JavaScript visualization library for interactive charts and analytical applications.
-
-
-
-* **[Vega](https://github.com/vega/vega)**
-
-  Open-source visualization grammar for creating declarative, interactive visualizations.
-
-
-
-* **[Vega-Lite](https://github.com/vega/vega-lite)**
-
-  High-level declarative visualization grammar useful for creating reusable analytics components.
-
-
-
-* **[Observable Plot](https://github.com/observablehq/plot)**
-
-  Open-source JavaScript visualization library optimized for exploratory and analytical graphics.
-
-
-
-* **[D3.js](https://github.com/d3/d3)**
-
-  Open-source JavaScript visualization framework for building fully custom embedded analytics interfaces.
-
-
-
-* **[Nivo](https://github.com/plouc/nivo)**
-
-  React-based open-source visualization component library useful for building custom embedded dashboards.
-
-
-
-* **[Recharts](https://github.com/recharts/recharts)**
-
-  React charting library useful for building lightweight custom analytics interfaces.
-
-
-
-* **[Tremor](https://github.com/tremorlabs/tremor)**
-
-  React component library for rapidly constructing dashboard and analytics interfaces.
-
-
-
-### Embedded Analytics SDKs & Components
-
-
-
-* **[Apache Superset Embedded SDK](https://github.com/apache/superset/tree/master/superset-embedded-sdk)**
-
-  Official open-source SDK for embedding Superset dashboards inside host applications.
-
-
-
-* **[Metabase Embedding](https://github.com/metabase/metabase)**
-
-  Metabase provides web components and React-based embedding for dashboards, questions and the query builder.
-
-
-
-* **[Cube Core](https://github.com/cube-js/cube)**
-
-  Headless open-source semantic layer that exposes analytics through APIs and can be used to build custom embedded analytics experiences.
-
-
-
-* **[Lightdash SDK](https://github.com/lightdash/lightdash)**
-
-  Open-source Lightdash platform with SDK-based embedding for dashboards, Data Apps and analytics experiences.
-
-
-
-* **[React Admin](https://github.com/marmelab/react-admin)**
-
-  Open-source React framework for data-driven applications that can be used as a foundation for custom analytics portals and customer-facing admin interfaces.
-
-
-
-* **[Apache Arrow](https://github.com/apache/arrow)**
-
-  Open-source columnar data standard and ecosystem useful for high-performance analytical data transport between backend and visualization layers.
-
-
-
-* **[Apache Arrow DataFusion](https://github.com/apache/datafusion)**
-
-  Open-source query engine that can serve as an analytical backend for custom embedded analytics products.
-
-
-
-### Additional Strong Open-Source Options
-
-
-
-* **[ClickHouse](https://github.com/ClickHouse/ClickHouse)**
-
-  High-performance open-source analytical database suitable for multi-tenant embedded analytics workloads and high-volume event data.
-
-
-
-* **[DuckDB](https://github.com/duckdb/duckdb)**
-
-  Open-source analytical database that can be embedded directly into applications, making it useful for local or application-level analytics.
-
-
-
-* **[PostgreSQL](https://github.com/postgres/postgres)**
-
-  Open-source relational database suitable for application data, tenant metadata, analytics data and row-level security implementations.
-
-
-
-* **[Apache Druid](https://github.com/apache/druid)**
-
-  Open-source real-time analytical database designed for high-performance slice-and-dice analytics.
-
-
-
-* **[Apache Pinot](https://github.com/apache/pinot)**
-
-  Open-source real-time OLAP datastore suitable for low-latency customer-facing analytics.
-
-
-
-* **[Trino](https://github.com/trinodb/trino)**
-
-  Open-source distributed SQL query engine capable of querying multiple heterogeneous data sources.
-
-
-
-* **[Apache Spark](https://github.com/apache/spark)**
-
-  Open-source distributed data-processing engine useful for large-scale analytical data preparation.
-
-
-
-* **[dbt-core](https://github.com/dbt-labs/dbt-core)**
-
-  Open-source analytics engineering framework useful for transforming raw customer data into governed models and metrics.
-
-
-
-* **[Airbyte](https://github.com/airbytehq/airbyte)**
-
-  Open-source data-integration platform useful for ingesting application and customer data into the analytics warehouse.
-
-
-
-* **[Meltano](https://github.com/meltano/meltano)**
-
-  Open-source ELT platform useful for building reproducible analytics data pipelines.
-
-
-
-* **[Apache Airflow](https://github.com/apache/airflow)**
-
-  Open-source workflow orchestration platform for scheduling analytics pipelines and data transformations.
-
-
-
-* **[Dagster](https://github.com/dagster-io/dagster)**
-
-  Open-source data orchestration framework suitable for building reliable embedded analytics data pipelines.
-
-
-
-* **[OpenMetadata](https://github.com/open-metadata/OpenMetadata)**
-
-  Open-source metadata platform useful for data discovery, governance and lineage in analytics environments.
-
-
-
-* **[OpenLineage](https://github.com/OpenLineage/OpenLineage)**
-
-  Open-source standard for tracking data lineage across analytics pipelines.
-
-
-
-* **[MinIO](https://github.com/minio/minio)**
-
-  Open-source S3-compatible object storage useful for analytics data lakes.
-
-
-
-* **[Keycloak](https://github.com/keycloak/keycloak)**
-
-  Open-source identity and access-management platform useful for SSO and authentication around embedded analytics applications.
-
-
-
-* **[n8n](https://github.com/n8n-io/n8n)**
-
-  Open-source workflow automation platform useful for connecting analytics events, alerts, customer workflows and application systems.
-
-
+## 🔓 Open-Source GitHub Projects
+
+> **Open-Source Ecosystem Note:** This section contains open-source BI engines, semantic layers, SDKs, visualization libraries, and analytical databases that can be self-hosted and combined into a custom embedded analytics architecture.
+
+### ⚡ Complete Open-Source BI & Embedded Analytics Platforms
+*Projects sorted by GitHub Star Count (Descending)*
+
+* [![Apache Superset Stars](https://img.shields.io/github/stars/apache/superset?style=social&color=white)](https://github.com/apache/superset/stargazers) **[Apache Superset](https://github.com/apache/superset)** — Open-source modern enterprise BI and data exploration platform with an official Embedded SDK, SQL Lab, and rich charting controls. 📊
+* [![Grafana Stars](https://img.shields.io/github/stars/grafana/grafana?style=social&color=white)](https://github.com/grafana/grafana/stargazers) **[Grafana](https://github.com/grafana/grafana)** — Operational dashboarding and visualization framework supporting multi-tenant plugins, alerts, and iframe/API embedding. 📈
+* [![Metabase Stars](https://img.shields.io/github/stars/metabase/metabase?style=social&color=white)](https://github.com/metabase/metabase/stargazers) **[Metabase](https://github.com/metabase/metabase)** — User-friendly open-source BI platform offering modular embedding, interactive question builders, and React web components. 🔍
+* [![Streamlit Stars](https://img.shields.io/github/stars/streamlit/streamlit?style=social&color=white)](https://github.com/streamlit/streamlit/stargazers) **[Streamlit](https://github.com/streamlit/streamlit)** — Python framework for turning data scripts into shareable, interactive web applications and embedded analytical portals. 🐍
+* [![Dash Stars](https://img.shields.io/github/stars/plotly/dash?style=social&color=white)](https://github.com/plotly/dash/stargazers) **[Dash](https://github.com/plotly/dash)** — Python and R framework built on top of Plotly.js and React for constructing analytical web applications. ⚡
+* [![Redash Stars](https://img.shields.io/github/stars/getredash/redash?style=social&color=white)](https://github.com/getredash/redash/stargazers) **[Redash](https://github.com/getredash/redash)** — Open-source query tool and dashboard builder designed to connect to any data source and share visualizations. 🎯
+* [![Evidence Stars](https://img.shields.io/github/stars/evidence-dev/evidence?style=social&color=white)](https://github.com/evidence-dev/evidence/stargazers) **[Evidence](https://github.com/evidence-dev/evidence)** — Code-based BI framework that turns markdown and SQL queries into interactive, version-controlled web dashboards. 📝
+* [![Lightdash Stars](https://img.shields.io/github/stars/lightdash/lightdash?style=social&color=white)](https://github.com/lightdash/lightdash/stargazers) **[Lightdash](https://github.com/lightdash/lightdash)** — dbt-native open-source BI platform designed for developer-led metrics, embedded dashboards, and row-level security. 💡
+* [![Appsmith Stars](https://img.shields.io/github/stars/appsmithorg/appsmith?style=social&color=white)](https://github.com/appsmithorg/appsmith/stargazers) **[Appsmith](https://github.com/appsmithorg/appsmith)** — Open-source low-code platform for building custom internal tools, admin panels, and embedded analytics applications. 🛠️
+* [![ToolJet Stars](https://img.shields.io/github/stars/ToolJet/ToolJet?style=social&color=white)](https://github.com/ToolJet/ToolJet/stargazers) **[ToolJet](https://github.com/ToolJet/ToolJet)** — Extensible open-source low-code framework to build data tools and customer analytics portals. 🚀
+* [![Rill Stars](https://img.shields.io/github/stars/rilldata/rill?style=social&color=white)](https://github.com/rilldata/rill/stargazers) **[Rill Developer](https://github.com/rilldata/rill)** — Fast, code-based analytics application engine powered by DuckDB for fast dashboard generation. ⏱️
+* [![Shiny Stars](https://img.shields.io/github/stars/rstudio/shiny?style=social&color=white)](https://github.com/rstudio/shiny/stargazers) **[Shiny](https://github.com/rstudio/shiny)** — Web application framework for R and Python to construct interactive analytical interfaces. 🔬
+* [![Perspective Stars](https://img.shields.io/github/stars/finos/perspective?style=social&color=white)](https://github.com/finos/perspective/stargazers) **[Perspective](https://github.com/finos/perspective)** — Fast streaming data visualization component for real-time and high-concurrency embedded analytics. ⚡
 
 ---
 
+### 🧠 Open-Source Semantic Layers
+*Projects sorted by GitHub Star Count (Descending)*
 
-
-## Commercial → Open-Source Capability Mapping
-
-
-
-| Commercial Platform      | Primary Focus                                     | Open-Source Equivalents / Building Blocks       |
-
-| ------------------------ | ------------------------------------------------- | ----------------------------------------------- |
-
-| **Explo**                | Developer-first embedded dashboards               | Apache Superset + Embedded SDK + Cube + ECharts |
-
-| **Toucan Toco**          | White-label embedded analytics + storytelling     | Lightdash + Cube + ECharts + custom React       |
-
-| **GoodData**             | Enterprise embedded analytics + semantic layer    | Lightdash + Cube + Superset + PostgreSQL        |
-
-| **Sisense**              | Enterprise embedded analytics + AI                | Lightdash + Cube + Superset + ClickHouse        |
-
-| **Looker Embedded**      | Governed BI + semantic modeling + embedding       | Cube + Lightdash + Superset + dbt-core          |
-
-| **Reveal BI**            | Embedded dashboards + self-service BI             | Superset + Metabase + ECharts                   |
-
-| **Bold BI**              | Embedded dashboards + SDK/API + multi-tenancy     | Superset + Cube + ECharts + Keycloak            |
-
-| **Logi Analytics**       | Embedded BI + developer customization             | Superset + Cube + React + ECharts               |
-
-| **Metabase Enterprise**  | Embedded BI + self-service analytics              | Metabase OSS + Cube + PostgreSQL                |
-
-| **Holistics**            | Embedded dashboards + portals + semantic modeling | Lightdash + Cube + Superset                     |
-
-| **Luzmo**                | SaaS embedded analytics                           | Lightdash + Cube + ECharts                      |
-
-| **Embeddable**           | Developer-first embedded analytics                | Cube + Superset + custom React                  |
-
-| **Tableau Embedded**     | Rich visual analytics                             | Superset + ECharts + Vega                       |
-
-| **Power BI Embedded**    | Enterprise BI embedding                           | Superset + Lightdash + Cube                     |
-
-| **ThoughtSpot Embedded** | Search/AI-driven analytics                        | Cube + Lightdash + LLM layer + ECharts          |
-
-| **Qlik Embedded**        | Governed associative analytics                    | Cube + Superset + ClickHouse                    |
-
-| **Grafana**              | Operational analytics dashboards                  | Grafana OSS                                     |
-
-| **Redash**               | SQL analytics + dashboards                        | Redash + PostgreSQL                             |
-
-| **Evidence**             | Code-based analytics                              | Evidence + dbt-core + DuckDB                    |
-
-
-
-> **Important:** These mappings are **capability-oriented rather than feature-for-feature replacements**. Commercial embedded analytics products generally bundle embedding, authentication, tenant isolation, semantic modeling, dashboards, self-service exploration, SDKs, white-labeling, support and enterprise controls. A self-hosted implementation will usually require several open-source components.
-
-
+* [![Cube Stars](https://img.shields.io/github/stars/cube-js/cube?style=social&color=white)](https://github.com/cube-js/cube/stargazers) **[Cube Core](https://github.com/cube-js/cube)** — Universal semantic layer for AI, BI, and embedded analytics; exposes APIs (REST, GraphQL, SQL) with multitenancy RLS. 🧊
+* [![Malloy Stars](https://img.shields.io/github/stars/malloydata/malloy?style=social&color=white)](https://github.com/malloydata/malloy/stargazers) **[Malloy](https://github.com/malloydata/malloy)** — Experimental analytical language and semantic modeling framework designed for nested data exploration. 🔮
+* [![MetricFlow Stars](https://img.shields.io/github/stars/dbt-labs/metricflow?style=social&color=white)](https://github.com/dbt-labs/metricflow/stargazers) **[MetricFlow](https://github.com/dbt-labs/metricflow)** — Metric abstraction engine powers dbt semantic layer for defining business metrics consistently. 📐
 
 ---
 
-
-
-## Framework for Building a Self-Hosted Embedded Analytics Platform
-
-
-
-A practical open-source architecture for building an **Explo / Toucan / GoodData / Sisense / Looker Embedded-style analytics platform** can be assembled from the following components:
-
-
-
-| Layer                | Open-Source Technologies                                                    |
-
-| -------------------- | --------------------------------------------------------------------------- |
-
-| Frontend             | React · Next.js · Vue                                                       |
-
-| Dashboard UI         | Superset · Metabase · Lightdash                                             |
-
-| Custom Charts        | ECharts · D3.js · Plotly.js · Vega                                          |
-
-| Embedded Analytics   | Superset Embedded SDK · Metabase Embedding · Lightdash SDK                  |
-
-| Semantic Layer       | Cube Core · Lightdash · MetricFlow · Transform                              |
-
-| Data Modeling        | dbt-core · SQL                                                              |
-
-| Query Engine         | Trino · DataFusion · DuckDB                                                 |
-
-| Analytics Database   | ClickHouse · Apache Druid · Apache Pinot                                    |
-
-| Application Database | PostgreSQL                                                                  |
-
-| Data Integration     | Airbyte · Meltano                                                           |
-
-| Orchestration        | Airflow · Dagster                                                           |
-
-| Object Storage       | MinIO                                                                       |
-
-| Data Format          | Apache Arrow · Parquet                                                      |
-
-| Authentication       | Keycloak                                                                    |
-
-| Multi-Tenancy        | PostgreSQL RLS · Cube Security Context · Application-level tenant isolation |
-
-| Visualization        | ECharts · D3 · Vega · Plotly                                                |
-
-| API                  | FastAPI · Django · Node.js                                                  |
-
-| Cache                | Redis                                                                       |
-
-| Search               | OpenSearch                                                                  |
-
-| Analytics            | DuckDB · Polars                                                             |
-
-| Deployment           | Docker · Kubernetes                                                         |
-
-
-
-### Recommended Architecture
-
-
-
-```text
-
-                         CUSTOMER'S APPLICATION
-
-                                  │
-
-                    ┌─────────────┴─────────────┐
-
-                    │                           │
-
-                    ▼                           ▼
-
-              SaaS Application            Embedded Analytics
-
-                    │                           │
-
-                    │                  ┌────────┴────────┐
-
-                    │                  │                 │
-
-                    │                  ▼                 ▼
-
-                    │             Dashboard UI      Custom Charts
-
-                    │                  │                 │
-
-                    │          Superset / Lightdash   ECharts
-
-                    │          Metabase / Custom       D3.js
-
-                    │                  │
-
-                    └──────────────────┼─────────────────┘
-
-                                       │
-
-                                       ▼
-
-                            EMBEDDING / API LAYER
-
-                                       │
-
-                         ┌─────────────┼─────────────┐
-
-                         │             │             │
-
-                         ▼             ▼             ▼
-
-                       REST          GraphQL        SDK
-
-                         │             │             │
-
-                         └─────────────┼─────────────┘
-
-                                       │
-
-                                       ▼
-
-                              SEMANTIC LAYER
-
-                                       │
-
-                             Cube Core / Lightdash
-
-                                       │
-
-                                       ▼
-
-                              QUERY / SQL LAYER
-
-                                       │
-
-                    ┌──────────────────┼──────────────────┐
-
-                    ▼                  ▼                  ▼
-
-                ClickHouse          Trino             DuckDB
-
-                    │                  │                  │
-
-                    └──────────────────┼──────────────────┘
-
-                                       │
-
-                                       ▼
-
-                              DATA TRANSFORMATION
-
-                                       │
-
-                               dbt-core / SQL
-
-                                       │
-
-                                       ▼
-
-                              DATA INGESTION
-
-                                       │
-
-                         Airbyte / Meltano / Airflow
-
-                                       │
-
-                                       ▼
-
-                             CUSTOMER DATA SOURCES
-
-```
-
-
-
-### Multi-Tenant Architecture
-
-
-
-A production embedded analytics platform needs strong tenant isolation:
-
-
-
-```text
-
-                         APPLICATION USER
-
-                                │
-
-                                ▼
-
-                         Authentication
-
-                          Keycloak / SSO
-
-                                │
-
-                                ▼
-
-                         Tenant Resolution
-
-                                │
-
-                     ┌──────────┴──────────┐
-
-                     │                     │
-
-                     ▼                     ▼
-
-                  tenant_id            user_id
-
-                     │                     │
-
-                     └──────────┬──────────┘
-
-                                ▼
-
-                         Security Context
-
-                                │
-
-                                ▼
-
-                         Semantic Layer
-
-                       Cube / Lightdash
-
-                                │
-
-                                ▼
-
-                         Row-Level Security
-
-                                │
-
-                                ▼
-
-                       Analytics Database
-
-                                │
-
-              ┌─────────────────┼─────────────────┐
-
-              ▼                 ▼                 ▼
-
-           Tenant A          Tenant B          Tenant C
-
-           Data Only        Data Only          Data Only
-
-```
-
-
-
-### Embedded Analytics Request Flow
-
-
-
-```text
-
-User Opens SaaS Application
-
-            ↓
-
-Application Authenticates User
-
-            ↓
-
-Resolve customer / tenant
-
-            ↓
-
-Generate signed analytics token
-
-            ↓
-
-Pass tenant + user context
-
-            ↓
-
-Embedded Dashboard / SDK
-
-            ↓
-
-Semantic Layer
-
-            ↓
-
-Apply Row-Level Security
-
-            ↓
-
-Generate SQL
-
-            ↓
-
-Query Analytics Warehouse
-
-            ↓
-
-Return Customer-Specific Data
-
-            ↓
-
-Render Dashboard Inside SaaS
-
-```
-
-
+### 🎨 Dashboard & Visualization Frameworks
+*Projects sorted by GitHub Star Count (Descending)*
+
+* [![D3 Stars](https://img.shields.io/github/stars/d3/d3?style=social&color=white)](https://github.com/d3/d3/stargazers) **[D3.js](https://github.com/d3/d3)** — Fundamental JavaScript library for manipulating documents based on data to create fully bespoke visualization systems. 🎨
+* [![ECharts Stars](https://img.shields.io/github/stars/apache/echarts?style=social&color=white)](https://github.com/apache/echarts/stargazers) **[Apache ECharts](https://github.com/apache/echarts)** — Powerful interactive charting and data visualization library for browser and mobile apps. 📊
+* [![Chart.js Stars](https://img.shields.io/github/stars/chartjs/Chart.js?style=social&color=white)](https://github.com/chartjs/Chart.js/stargazers) **[Chart.js](https://github.com/chartjs/Chart.js)** — Simple yet flexible JavaScript charting library for designers & developers. 📉
+* [![Plotly.js Stars](https://img.shields.io/github/stars/plotly/plotly.js?style=social&color=white)](https://github.com/plotly/plotly.js/stargazers) **[Plotly.js](https://github.com/plotly/plotly.js)** — High-level declarative charting library powering scientific and statistical dashboards. 🧪
+* [![Recharts Stars](https://img.shields.io/github/stars/recharts/recharts?style=social&color=white)](https://github.com/recharts/recharts/stargazers) **[Recharts](https://github.com/recharts/recharts)** — Redefined chart library built with React and D3 components. ⚛️
+* [![Vega-Lite Stars](https://img.shields.io/github/stars/vega/vega-lite?style=social&color=white)](https://github.com/vega/vega-lite/stargazers) **[Vega-Lite](https://github.com/vega/vega-lite)** — High-level grammar of interactive graphics built on Vega. 📜
+* [![Nivo Stars](https://img.shields.io/github/stars/plouc/nivo?style=social&color=white)](https://github.com/plouc/nivo/stargazers) **[Nivo](https://github.com/plouc/nivo)** — Rich set of React components to build dataviz apps with server-side rendering support. 🖼️
+* [![Tremor Stars](https://img.shields.io/github/stars/tremorlabs/tremor?style=social&color=white)](https://github.com/tremorlabs/tremor/stargazers) **[Tremor](https://github.com/tremorlabs/tremor)** — React component library to build modern dashboard interfaces fast. 🧱
+* [![Vega Stars](https://img.shields.io/github/stars/vega/vega?style=social&color=white)](https://github.com/vega/vega/stargazers) **[Vega](https://github.com/vega/vega)** — Visualization grammar defining visual appearance and interactive behavior in JSON format. 🔤
+* [![Observable Plot Stars](https://img.shields.io/github/stars/observablehq/plot?style=social&color=white)](https://github.com/observablehq/plot/stargazers) **[Observable Plot](https://github.com/observablehq/plot)** — Concise JavaScript library for exploratory data visualization. ✍️
 
 ---
 
-
-
-## Open-Source Embedded Analytics Stack
-
-
-
-```text
-
-                         ┌────────────────────────┐
-
-                         │     SaaS PRODUCT       │
-
-                         │                        │
-
-                         │ React / Next.js / Vue  │
-
-                         └────────────┬───────────┘
-
-                                      │
-
-                                      ▼
-
-                         ┌────────────────────────┐
-
-                         │ EMBEDDED EXPERIENCE    │
-
-                         │                        │
-
-                         │ Superset SDK           │
-
-                         │ Metabase Embedding     │
-
-                         │ Lightdash SDK          │
-
-                         │ Custom React            │
-
-                         └────────────┬───────────┘
-
-                                      │
-
-                                      ▼
-
-                         ┌────────────────────────┐
-
-                         │    SEMANTIC LAYER      │
-
-                         │                        │
-
-                         │ Cube Core               │
-
-                         │ Lightdash               │
-
-                         │ MetricFlow              │
-
-                         └────────────┬───────────┘
-
-                                      │
-
-                                      ▼
-
-                         ┌────────────────────────┐
-
-                         │     QUERY ENGINE       │
-
-                         │                        │
-
-                         │ Trino · DataFusion     │
-
-                         │ DuckDB                 │
-
-                         └────────────┬───────────┘
-
-                                      │
-
-                                      ▼
-
-                         ┌────────────────────────┐
-
-                         │ ANALYTICAL DATABASE    │
-
-                         │                        │
-
-                         │ ClickHouse             │
-
-                         │ Pinot · Druid          │
-
-                         │ PostgreSQL              │
-
-                         └────────────┬───────────┘
-
-                                      │
-
-                                      ▼
-
-                         ┌────────────────────────┐
-
-                         │ DATA TRANSFORMATION    │
-
-                         │                        │
-
-                         │ dbt-core                │
-
-                         └────────────┬───────────┘
-
-                                      │
-
-                                      ▼
-
-                         ┌────────────────────────┐
-
-                         │      DATA INGESTION    │
-
-                         │                        │
-
-                         │ Airbyte · Meltano      │
-
-                         │ Airflow · Dagster      │
-
-                         └────────────────────────┘
-
-```
-
-
+### 📦 Embedded Analytics SDKs & Components
+*Projects sorted by GitHub Star Count (Descending)*
+
+* [![React Admin Stars](https://img.shields.io/github/stars/marmelab/react-admin?style=social&color=white)](https://github.com/marmelab/react-admin/stargazers) **[React Admin](https://github.com/marmelab/react-admin)** — B2B application framework for building data-driven dashboards and client portals on REST/GraphQL APIs. 💻
+* [![Apache Arrow Stars](https://img.shields.io/github/stars/apache/arrow?style=social&color=white)](https://github.com/apache/arrow/stargazers) **[Apache Arrow](https://github.com/apache/arrow)** — In-memory columnar data format designed for high-performance analytical data movement. 🏹
+* [![DataFusion Stars](https://img.shields.io/github/stars/apache/datafusion?style=social&color=white)](https://github.com/apache/datafusion/stargazers) **[Apache Arrow DataFusion](https://github.com/apache/datafusion)** — Extensible Rust-native SQL query engine for building custom analytical databases and embedded runtimes. 🦀
+* [![Superset Embedded SDK Stars](https://img.shields.io/github/stars/apache/superset?style=social&color=white)](https://github.com/apache/superset/tree/master/superset-embedded-sdk) **[Superset Embedded SDK](https://github.com/apache/superset/tree/master/superset-embedded-sdk)** — Dedicated JavaScript SDK for embedding Superset dashboards securely with guest tokens. 🔐
 
 ---
 
+### 🗄️ Analytical Databases & Storage Infrastructure
+*Projects sorted by GitHub Star Count (Descending)*
 
-
-## Embedded Analytics Capability Matrix
-
-
-
-| Capability                 | Commercial Embedded BI | Open-Source Options                 |
-
-| -------------------------- | ---------------------- | ----------------------------------- |
-
-| Embedded Dashboards        | ✓                      | Superset · Metabase · Lightdash     |
-
-| Interactive Charts         | ✓                      | ECharts · D3 · Vega · Plotly        |
-
-| Self-Service Analytics     | ✓                      | Metabase · Superset · Lightdash     |
-
-| Dashboard Builder          | ✓                      | Metabase · Superset · Lightdash     |
-
-| White Labeling             | ✓                      | Custom UI · CSS · SDKs              |
-
-| Multi-Tenancy              | ✓                      | Cube · PostgreSQL RLS · Keycloak    |
-
-| Row-Level Security         | ✓                      | Cube · PostgreSQL RLS · Superset    |
-
-| SSO                        | ✓                      | Keycloak · OAuth · OIDC             |
-
-| Signed Embedding           | ✓                      | Superset · Custom JWT               |
-
-| REST API                   | ✓                      | Cube · Superset · Metabase          |
-
-| GraphQL                    | ✓                      | Cube                                |
-
-| React SDK                  | ✓                      | Metabase · custom React · Lightdash |
-
-| Semantic Layer             | ✓                      | Cube · Lightdash · MetricFlow       |
-
-| Metric Definitions         | ✓                      | Cube · Lightdash · dbt              |
-
-| SQL Analytics              | ✓                      | Superset · Metabase · Redash        |
-
-| Real-Time Analytics        | ✓                      | ClickHouse · Pinot · Druid          |
-
-| High-Concurrency Analytics | ✓                      | ClickHouse · Pinot · Cube           |
-
-| Embedded AI                | ✓                      | Cube + LLM · Lightdash              |
-
-| Custom Visualization       | ✓                      | ECharts · D3 · Vega                 |
-
-| Data Apps                  | ✓                      | Lightdash · Streamlit · Dash        |
-
-| Data Pipelines             | ✓                      | Airbyte · Meltano                   |
-
-| Transformation             | ✓                      | dbt-core                            |
-
-| Query Federation           | ✓                      | Trino                               |
-
-| Embedded Database          | ✓                      | DuckDB                              |
-
-| Data Lake                  | ✓                      | MinIO                               |
-
-| Workflow Orchestration     | ✓                      | Airflow · Dagster                   |
-
-| Metadata / Governance      | ✓                      | OpenMetadata                        |
-
-| Data Lineage               | ✓                      | OpenLineage                         |
-
-| BI Dashboards              | ✓                      | Superset · Metabase · Grafana       |
-
-| API-First Analytics        | ✓                      | Cube · Superset                     |
-
-| Self-Hosting               | Varies                 | ✓                                   |
-
-| Source Code Access         | Varies                 | ✓                                   |
-
-
+* [![PostgreSQL Stars](https://img.shields.io/github/stars/postgres/postgres?style=social&color=white)](https://github.com/postgres/postgres/stargazers) **[PostgreSQL](https://github.com/postgres/postgres)** — World's most advanced relational database with powerful Row-Level Security (RLS) for tenant isolation. 🐘
+* [![ClickHouse Stars](https://img.shields.io/github/stars/ClickHouse/ClickHouse?style=social&color=white)](https://github.com/ClickHouse/ClickHouse/stargazers) **[ClickHouse](https://github.com/ClickHouse/ClickHouse)** — Fast open-source column-oriented DBMS for real-time high-concurrency multi-tenant analytics. ⚡
+* [![DuckDB Stars](https://img.shields.io/github/stars/duckdb/duckdb?style=social&color=white)](https://github.com/duckdb/duckdb/stargazers) **[DuckDB](https://github.com/duckdb/duckdb)** — In-process SQL OLAP database engine designed for ultra-fast local/embedded analytical execution. 🦆
+* [![Apache Spark Stars](https://img.shields.io/github/stars/apache/spark?style=social&color=white)](https://github.com/apache/spark/stargazers) **[Apache Spark](https://github.com/apache/spark)** — Unified analytics engine for large-scale data processing and ETL pipelines. ❇️
+* [![Trino Stars](https://img.shields.io/github/stars/trinodb/trino?style=social&color=white)](https://github.com/trinodb/trino/stargazers) **[Trino](https://github.com/trinodb/trino)** — Fast distributed SQL query engine for federated queries across multiple data sources. 🦩
+* [![MinIO Stars](https://img.shields.io/github/stars/minio/minio?style=social&color=white)](https://github.com/minio/minio/stargazers) **[MinIO](https://github.com/minio/minio)** — High-performance S3-compatible object storage server for cloud-native analytical data lakes. 🪣
+* [![Apache Druid Stars](https://img.shields.io/github/stars/apache/druid?style=social&color=white)](https://github.com/apache/druid/stargazers) **[Apache Druid](https://github.com/apache/druid)** — Real-time analytics database designed for fast sub-second slice-and-dice queries. ⏱️
+* [![Apache Pinot Stars](https://img.shields.io/github/stars/apache/pinot?style=social&color=white)](https://github.com/apache/pinot/stargazers) **[Apache Pinot](https://github.com/apache/pinot)** — Distributed real-time OLAP datastore designed for low-latency user-facing analytics. 🍷
 
 ---
 
+### 🔄 Data Engineering, Orchestration & Pipelines
+*Projects sorted by GitHub Star Count (Descending)*
 
+* [![Airflow Stars](https://img.shields.io/github/stars/apache/airflow?style=social&color=white)](https://github.com/apache/airflow/stargazers) **[Apache Airflow](https://github.com/apache/airflow)** — Programmatic workflow orchestration platform to author, schedule, and monitor data pipelines. 🌀
+* [![Airbyte Stars](https://img.shields.io/github/stars/airbytehq/airbyte?style=social&color=white)](https://github.com/airbytehq/airbyte/stargazers) **[Airbyte](https://github.com/airbytehq/airbyte)** — Open-source data integration platform to sync data from applications to data warehouses. 🐙
+* [![dbt-core Stars](https://img.shields.io/github/stars/dbt-labs/dbt-core?style=social&color=white)](https://github.com/dbt-labs/dbt-core/stargazers) **[dbt-core](https://github.com/dbt-labs/dbt-core)** — Analytics engineering framework to transform raw warehouse data using SQL & software practices. 🟧
+* [![Dagster Stars](https://img.shields.io/github/stars/dagster-io/dagster?style=social&color=white)](https://github.com/dagster-io/dagster/stargazers) **[Dagster](https://github.com/dagster-io/dagster)** — Cloud-native data orchestrator for machine learning, analytics, and data engine pipelines. 🟨
+* [![Meltano Stars](https://img.shields.io/github/stars/meltano/meltano?style=social&color=white)](https://github.com/meltano/meltano/stargazers) **[Meltano](https://github.com/meltano/meltano)** — CLI-first declarative ELT tooling for data engineering operations. 🦡
 
-## How to Contribute
+---
 
+### 🔐 Security, Automation & Supporting Infrastructure
+*Projects sorted by GitHub Star Count (Descending)*
 
+* [![n8n Stars](https://img.shields.io/github/stars/n8n-io/n8n?style=social&color=white)](https://github.com/n8n-io/n8n/stargazers) **[n8n](https://github.com/n8n-io/n8n)** — Fair-code workflow automation platform for triggering analytics alerts and customer actions. ⚡
+* [![Keycloak Stars](https://img.shields.io/github/stars/keycloak/keycloak?style=social&color=white)](https://github.com/keycloak/keycloak/stargazers) **[Keycloak](https://github.com/keycloak/keycloak)** — Open-source identity and access management system providing SSO, OAuth2, and OIDC for embedded portals. 🔑
+* [![OpenMetadata Stars](https://img.shields.io/github/stars/open-metadata/OpenMetadata?style=social&color=white)](https://github.com/open-metadata/OpenMetadata/stargazers) **[OpenMetadata](https://github.com/open-metadata/OpenMetadata)** — Open-source metadata platform for data governance, discovery, and schema lineage. 📖
+* [![OpenLineage Stars](https://img.shields.io/github/stars/OpenLineage/OpenLineage?style=social&color=white)](https://github.com/OpenLineage/OpenLineage/stargazers) **[OpenLineage](https://github.com/OpenLineage/OpenLineage)** — Open standard for data lineage collection and tracking across processing jobs. 🌐
+
+---
+
+## 🔄 Commercial → Open-Source Capability Mapping
+
+| Commercial Platform | Primary Commercial Focus | Open-Source Equivalents / Building Blocks |
+| :--- | :--- | :--- |
+| **Explo** | Developer-first embedded dashboards | Apache Superset + Embedded SDK + Cube + ECharts |
+| **Toucan Toco** | White-label embedded analytics + storytelling | Lightdash + Cube + ECharts + Custom React |
+| **GoodData** | Enterprise embedded analytics + semantic layer | Lightdash + Cube + Superset + PostgreSQL |
+| **Sisense** | Enterprise embedded analytics + AI | Lightdash + Cube + Superset + ClickHouse |
+| **Looker Embedded** | Governed BI + semantic modeling + embedding | Cube + Lightdash + Superset + dbt-core |
+| **Reveal BI** | Embedded dashboards + self-service BI | Superset + Metabase + ECharts |
+| **Bold BI** | Embedded dashboards + SDK/API + multi-tenancy | Superset + Cube + ECharts + Keycloak |
+| **Logi Analytics** | Embedded BI + developer customization | Superset + Cube + React + ECharts |
+| **Metabase Enterprise** | Embedded BI + self-service analytics | Metabase OSS + Cube + PostgreSQL |
+| **Holistics** | Embedded dashboards + portals + semantic modeling | Lightdash + Cube + Superset |
+| **Luzmo** | SaaS embedded analytics | Lightdash + Cube + ECharts |
+| **Embeddable** | Developer-first embedded analytics | Cube + Superset + Custom React |
+| **Tableau Embedded** | Rich visual analytics | Superset + ECharts + Vega |
+| **Power BI Embedded** | Enterprise BI embedding | Superset + Lightdash + Cube |
+| **ThoughtSpot Embedded** | Search/AI-driven analytics | Cube + Lightdash + LLM Layer + ECharts |
+| **Qlik Embedded** | Governed associative analytics | Cube + Superset + ClickHouse |
+| **Grafana Enterprise** | Operational analytics dashboards | Grafana OSS |
+| **Redash Enterprise** | SQL analytics + dashboards | Redash + PostgreSQL |
+| **Evidence Cloud** | Code-based analytics | Evidence + dbt-core + DuckDB |
+
+---
+
+## 🏗️ Framework for Building a Self-Hosted Embedded Analytics Platform
+
+| Layer | Recommended Open-Source Stack Component |
+| :--- | :--- |
+| **Frontend Frame** | React · Next.js · Vue.js |
+| **Dashboard UI** | Apache Superset · Metabase · Lightdash |
+| **Custom Charts** | Apache ECharts · D3.js · Plotly.js · Tremor |
+| **Embedded Analytics SDK** | Superset Embedded SDK · Metabase Web Components · Lightdash SDK |
+| **Semantic Layer** | Cube Core · Lightdash Semantic Layer · MetricFlow |
+| **Data Modeling** | dbt-core · SQL |
+| **Query Engine** | Trino · DataFusion · DuckDB |
+| **Analytics Database** | ClickHouse · Apache Druid · Apache Pinot |
+| **Application Database** | PostgreSQL |
+| **Data Ingestion** | Airbyte · Meltano |
+| **Orchestration** | Apache Airflow · Dagster |
+| **Object Storage** | MinIO |
+| **Authentication & AuthZ** | Keycloak · JWT · OAuth2 |
+| **Multi-Tenancy RLS** | PostgreSQL RLS · Cube Security Context |
+
+---
+
+## 📈 Star History
+
+[![Star History Chart](https://star-history.dera.page/svg?repos=ishandutta2007/Awesome-Embedded-Dashboards&type=date&legend=top-left)](https://star-history.dera.page/#ishandutta2007/Awesome-Embedded-Dashboards&type=date&legend=top-left)
+
+---
+
+## ❤️ Support & Community
+
+Thank you for visiting **Awesome Embedded Dashboards**! 🌟
+
+If you find this curated directory helpful for evaluating embedded BI products or constructing self-hosted customer analytics platforms, please consider supporting the project:
+* ⭐ **Star this repository** to help others discover it!
+* 🔀 **Fork & Share** with your developer and data engineering networks.
+* ☕ **Sponsor & Buy me a coffee:** [<img src="https://img.shields.io/badge/Sponsor-GitHub-ea4aaa?style=for-the-badge&logo=github" height="24"/>](https://github.com/sponsors/ishandutta2007)
+
+---
+
+## 🤝 How to Contribute
 
 1. Fork the repository.
-
-
-
-2. Add or edit entries in `README.md` following the existing format.
-
-
-
-3. Include the official website or GitHub repository.
-
-
-
-4. Clearly identify whether the project is **SaaS/Hosted**, **Open Source**, **Embedded BI**, **Dashboarding**, **Semantic Layer**, **Visualization**, **Data Platform**, or a **Supporting Building Block**.
-
-
-
-5. Prefer actively maintained open-source repositories.
-
-
-
-6. Include the project's license when known.
-
-
-
-7. Distinguish complete embedded analytics platforms from visualization libraries and backend infrastructure.
-
-
-
-8. Add new self-hosted embedded analytics platforms.
-
-
-
-9. Add open-source dashboard embedding SDKs.
-
-
-
-10. Add semantic layers suitable for customer-facing analytics.
-
-
-
-11. Add projects supporting multi-tenancy, row-level security and white-labeling.
-
-
-
-12. Add new visualization and dashboard-building frameworks.
-
-
-
-13. Submit a pull request with a short explanation of the addition or update.
-
-
-
-⭐ **Star the repository if you find it useful!**
-
-
+2. Add or edit entries in `README.md` following the existing structured format.
+3. Include official website links and active GitHub repository references.
+4. Ensure accurate classification: **SaaS/Hosted**, **Open-Source Engine**, **Semantic Layer**, or **Visualization Library**.
+5. Submit a Pull Request with a clear summary of additions.
 
 ---
 
+## ⚠️ Disclaimer
 
-
-## Disclaimer
-
-
-
-* This repository is a **curated directory**, not a ranking or endorsement of any particular product.
-
-* Commercial products and features change frequently; verify current capabilities, pricing, licensing and integrations with the vendor.
-
-* Open-source projects vary substantially in maturity, maintenance activity, documentation, scalability and production readiness.
-
-* A project such as **Cube Core, Apache Superset or Metabase** can provide an important foundation for embedded analytics, but a complete commercial embedded-analytics platform may include additional proprietary functionality around authentication, tenant management, white-labeling, support, governance and enterprise controls.
-
-* Visualization libraries such as **ECharts, D3.js and Vega** are not complete embedded BI platforms by themselves.
-
-* Semantic layers such as **Cube Core** provide the analytical/business-logic layer but do not replace the entire customer-facing dashboard experience.
-
-* Multi-tenant analytics requires careful implementation of authentication, authorization, row-level security and data isolation.
-
-* Embedded analytics can expose sensitive customer data; review security, privacy, tenant isolation and access-control requirements before deployment.
-
-* Always review the license of each open-source project before using it commercially.
-
-* Project links, features and availability may change over time.
-
-
+- This repository is a **curated community catalog**, not an endorsement or official ranking.
+- SaaS pricing, limits, and enterprise features change over time; verify directly with vendors.
+- Open-source projects vary in production readiness and licensing; audit dependencies before deployment.
 
 ---
 
-
-
-**Made for SaaS companies, developers, data teams, product teams & builders exploring the open-source embedded analytics ecosystem.**
-
-**Let's make customer-facing analytics more programmable, composable and self-hostable.**
+<p align="center">
+  <b>Built with ❤️ for SaaS Founders, Product Managers, Data Engineers & Full-Stack Developers.</b>
+</p>
