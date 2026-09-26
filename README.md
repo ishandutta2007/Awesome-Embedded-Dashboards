@@ -6,7 +6,7 @@
 
 <p align="center">
   <a href="https://github.com/ishandutta2007/Awesome-Awesome-Awesome"><img src="https://img.shields.io/badge/Awesome-%E2%9C%94-blueviolet?style=flat-square&logo=github" alt="Awesome"/></a><a href="https://discord.gg/jc4xtF58Ve"><img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord" /></a>
-  <a href="https://github.com/ishandutta2007/Awesome-Embedded-Dashboards"><img src="https://img.shields.io/github/stars/ishandutta2007/Awesome-Embedded-Dashboards?style=flat-square&color=gold" alt="GitHub Stars"/></a>
+  <a href="https://github.com/ishandutta2007/Awesome-Embedded-Dashboards"><img src="https://img.shields.io/github/stars/ishandutta2007/Awesome-Embedded-Dashboards?style=flat-square&color=gold" alt="GitHub_Stars"/></a>
   <a href="https://github.com/ishandutta2007/Awesome-Embedded-Dashboards/blob/main/LICENSE"><img src="https://img.shields.io/github/license/ishandutta2007/Awesome-Embedded-Dashboards?style=flat-square&color=blue" alt="License"/></a>
   <a href="https://github.com/ishandutta2007"><img alt="GitHub followers" src="https://img.shields.io/github/followers/ishandutta2007?label=Follow" /></a>
 </p>
@@ -118,7 +118,7 @@ For example, **Apache Superset** provides an Embedded SDK for placing Superset d
 > **Open-Source Ecosystem Note:** This section contains open-source BI engines, semantic layers, SDKs, visualization libraries, and analytical databases that can be self-hosted and combined into a custom embedded analytics architecture.
 
 ### ⚡ Complete Open-Source BI & Embedded Analytics Platforms
-*Projects sorted by GitHub Star Count (Descending)*
+*Projects sorted by GitHub Stars_Count (Descending)*
 
 * [![Apache Superset Stars](https://img.shields.io/github/stars/apache/superset?style=social&color=white)](https://github.com/apache/superset/stargazers) **[Apache Superset](https://github.com/apache/superset)** — Open-source modern enterprise BI and data exploration platform with an official Embedded SDK, SQL Lab, and rich charting controls. 📊
 * [![Grafana Stars](https://img.shields.io/github/stars/grafana/grafana?style=social&color=white)](https://github.com/grafana/grafana/stargazers) **[Grafana](https://github.com/grafana/grafana)** — Operational dashboarding and visualization framework supporting multi-tenant plugins, alerts, and iframe/API embedding. 📈
@@ -137,7 +137,7 @@ For example, **Apache Superset** provides an Embedded SDK for placing Superset d
 ---
 
 ### 🧠 Open-Source Semantic Layers
-*Projects sorted by GitHub Star Count (Descending)*
+*Projects sorted by GitHub Stars_Count (Descending)*
 
 * [![Cube Stars](https://img.shields.io/github/stars/cube-js/cube?style=social&color=white)](https://github.com/cube-js/cube/stargazers) **[Cube Core](https://github.com/cube-js/cube)** — Universal semantic layer for AI, BI, and embedded analytics; exposes APIs (REST, GraphQL, SQL) with multitenancy RLS. 🧊
 * [![Malloy Stars](https://img.shields.io/github/stars/malloydata/malloy?style=social&color=white)](https://github.com/malloydata/malloy/stargazers) **[Malloy](https://github.com/malloydata/malloy)** — Experimental analytical language and semantic modeling framework designed for nested data exploration. 🔮
@@ -146,7 +146,7 @@ For example, **Apache Superset** provides an Embedded SDK for placing Superset d
 ---
 
 ### 🎨 Dashboard & Visualization Frameworks
-*Projects sorted by GitHub Star Count (Descending)*
+*Projects sorted by GitHub Stars_Count (Descending)*
 
 * [![D3 Stars](https://img.shields.io/github/stars/d3/d3?style=social&color=white)](https://github.com/d3/d3/stargazers) **[D3.js](https://github.com/d3/d3)** — Fundamental JavaScript library for manipulating documents based on data to create fully bespoke visualization systems. 🎨
 * [![ECharts Stars](https://img.shields.io/github/stars/apache/echarts?style=social&color=white)](https://github.com/apache/echarts/stargazers) **[Apache ECharts](https://github.com/apache/echarts)** — Powerful interactive charting and data visualization library for browser and mobile apps. 📊
@@ -162,7 +162,7 @@ For example, **Apache Superset** provides an Embedded SDK for placing Superset d
 ---
 
 ### 📦 Embedded Analytics SDKs & Components
-*Projects sorted by GitHub Star Count (Descending)*
+*Projects sorted by GitHub Stars_Count (Descending)*
 
 * [![React Admin Stars](https://img.shields.io/github/stars/marmelab/react-admin?style=social&color=white)](https://github.com/marmelab/react-admin/stargazers) **[React Admin](https://github.com/marmelab/react-admin)** — B2B application framework for building data-driven dashboards and client portals on REST/GraphQL APIs. 💻
 * [![Apache Arrow Stars](https://img.shields.io/github/stars/apache/arrow?style=social&color=white)](https://github.com/apache/arrow/stargazers) **[Apache Arrow](https://github.com/apache/arrow)** — In-memory columnar data format designed for high-performance analytical data movement. 🏹
@@ -172,7 +172,7 @@ For example, **Apache Superset** provides an Embedded SDK for placing Superset d
 ---
 
 ### 🗄️ Analytical Databases & Storage Infrastructure
-*Projects sorted by GitHub Star Count (Descending)*
+*Projects sorted by GitHub Stars_Count (Descending)*
 
 * [![PostgreSQL Stars](https://img.shields.io/github/stars/postgres/postgres?style=social&color=white)](https://github.com/postgres/postgres/stargazers) **[PostgreSQL](https://github.com/postgres/postgres)** — World's most advanced relational database with powerful Row-Level Security (RLS) for tenant isolation. 🐘
 * [![ClickHouse Stars](https://img.shields.io/github/stars/ClickHouse/ClickHouse?style=social&color=white)](https://github.com/ClickHouse/ClickHouse/stargazers) **[ClickHouse](https://github.com/ClickHouse/ClickHouse)** — Fast open-source column-oriented DBMS for real-time high-concurrency multi-tenant analytics. ⚡
@@ -186,7 +186,7 @@ For example, **Apache Superset** provides an Embedded SDK for placing Superset d
 ---
 
 ### 🔄 Data Engineering, Orchestration & Pipelines
-*Projects sorted by GitHub Star Count (Descending)*
+*Projects sorted by GitHub Stars_Count (Descending)*
 
 * [![Airflow Stars](https://img.shields.io/github/stars/apache/airflow?style=social&color=white)](https://github.com/apache/airflow/stargazers) **[Apache Airflow](https://github.com/apache/airflow)** — Programmatic workflow orchestration platform to author, schedule, and monitor data pipelines. 🌀
 * [![Airbyte Stars](https://img.shields.io/github/stars/airbytehq/airbyte?style=social&color=white)](https://github.com/airbytehq/airbyte/stargazers) **[Airbyte](https://github.com/airbytehq/airbyte)** — Open-source data integration platform to sync data from applications to data warehouses. 🐙
@@ -197,7 +197,7 @@ For example, **Apache Superset** provides an Embedded SDK for placing Superset d
 ---
 
 ### 🔐 Security, Automation & Supporting Infrastructure
-*Projects sorted by GitHub Star Count (Descending)*
+*Projects sorted by GitHub Stars_Count (Descending)*
 
 * [![n8n Stars](https://img.shields.io/github/stars/n8n-io/n8n?style=social&color=white)](https://github.com/n8n-io/n8n/stargazers) **[n8n](https://github.com/n8n-io/n8n)** — Fair-code workflow automation platform for triggering analytics alerts and customer actions. ⚡
 * [![Keycloak Stars](https://img.shields.io/github/stars/keycloak/keycloak?style=social&color=white)](https://github.com/keycloak/keycloak/stargazers) **[Keycloak](https://github.com/keycloak/keycloak)** — Open-source identity and access management system providing SSO, OAuth2, and OIDC for embedded portals. 🔑
